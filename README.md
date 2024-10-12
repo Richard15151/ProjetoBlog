@@ -3,8 +3,7 @@
 ![Imagem de capa](/static/gif/Blog%20do%20timão!.gif)
 # BLOG DO TIMÃO
 **Descrição:**
-O Blog do Timão é um blog simples desenvolvido em Python utilizando o framework Flask e o banco de dados MySQL. O blog permite que os usuários visualizem, cadastrem e excluam posts, permite também que o ADM crie novos usuários e administre o blog.
-A aplicação foi desenvolvida como um projeto pessoal para fins de aprendizado e demonstração de habilidades em desenvolvimento web com Python.
+O Blog do Timão é um blog simples desenvolvido em Python utilizando o framework Flask e o banco de dados MySQL. O blog permite que os usuários visualizem, cadastrem e excluam posts, permite também que o ADM crie novos usuários e administre o blog. A aplicação é bem estruturada e comentada, o que facilita a compreensão e manutenção do código.
 ## Índice
 * [Funcionalidades](#funcionalidades)
 * [Tecnologias](#tecnologias-utilizadas)
