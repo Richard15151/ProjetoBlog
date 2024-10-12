@@ -53,11 +53,9 @@ def index():
         login = False
         id_usuario = ""
     return render_template("index.html", posts=posts_formatados, login=login, id_usuario=id_usuario)
-
 @app.route('/login')
 def login():
     return render_template('login.html')
-
 #rota para verificar o acesso do admin
 @app.route("/acesso", methods=['GET', 'POST'])
 def acesso():
@@ -85,6 +83,7 @@ def acesso():
         return redirect('/')
     else:
         return render_template("login.html", mensagem="Usuário/Senha estão incorretos!")
+
 
 
 #rota para abrir a página novo post
@@ -277,16 +276,16 @@ def excluir_post(id):
     else:
         return redirect("/")
         
+#Rota trata o erro 404 - Página não encontrada
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('erro404.html'), 404
+
 #rota para logout
 @app.route("/logout")
 def logout():
     session.clear()
     return redirect('/')
-
-#Rota trata o erro 404 - Página não encontrada
-@app.errorhandler(404)
-def not_found(error):
-    return render_template('erro404.html'), 404
 
 if ambiente == 'producao':
     if __name__ == '__main__':
